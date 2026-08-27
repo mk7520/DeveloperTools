@@ -1,14 +1,71 @@
-# Test Complete ignore files: https://support.smartbear.com/viewarticle/68002/
+# .gitignore - Git ignore file
 
-# Tester-specific Settings
-*.tcCFGExtender
-*.tcLS
+# Rust
+/target/
+/Cargo.lock
+**/*.rs.bk
+*.pdb
 
-# Type library declarations
-*.tlb
+# Node/NPM
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.tsbuildinfo
 
-# Log files
-*.tcLogs
+# Vite
+dist/
+.cache/
 
-# Backup files
-*.bak
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Database
+*.db
+*.db-shm
+*.db-wal
+
+# Logs
+logs/
+*.log
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Tauri
+src-tauri/target/
+libwebview2loader.dll
+
+# Build artifacts
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+
+# Development
+.cache
+.eslintcache
+dist/
+coverage/
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# IDE settings
+.vscode/settings.json
+.idea/vcs.xml
+.prettierrc.local

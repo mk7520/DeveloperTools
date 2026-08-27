@@ -1,0 +1,87 @@
+/* Terminal.css - Terminal styling */
+
+.terminal {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #1e1e1e;
+  color: #00ff00;
+  font-family: 'Courier New', monospace;
+  font-size: 12px;
+}
+
+.terminal-header {
+  padding: 10px 15px;
+  background-color: #2d2d30;
+  border-bottom: 1px solid #3e3e42;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.terminal-header span {
+  font-weight: bold;
+}
+
+.btn-close {
+  background: none;
+  border: none;
+  color: #d4d4d4;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.btn-close:hover {
+  color: #ff6b6b;
+}
+
+.terminal-output {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px 15px;
+  background-color: #1e1e1e;
+}
+
+.terminal-line {
+  margin: 2px 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.terminal-input {
+  padding: 10px 15px;
+  border-top: 1px solid #3e3e42;
+}
+
+.terminal-input input {
+  width: 100%;
+  background-color: #1e1e1e;
+  border: none;
+  color: #00ff00;
+  font-family: 'Courier New', monospace;
+  font-size: 12px;
+  outline: none;
+}
+
+.terminal-input input::placeholder {
+  color: #666;
+}
+
+/* Scrollbar styling */
+.terminal-output::-webkit-scrollbar {
+  width: 8px;
+}
+
+.terminal-output::-webkit-scrollbar-track {
+  background: #2d2d30;
+}
+
+.terminal-output::-webkit-scrollbar-thumb {
+  background: #3e3e42;
+  border-radius: 4px;
+}
+
+.terminal-output::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
